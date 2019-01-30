@@ -141,6 +141,9 @@ int main() {
             }
             else if(strcmp(buffer,"size\n") == 0)
                 stack_size();
+	    else if(strcmp(buffer,"create\n") == 0){
+		create();
+	}
             kill(parent_id,SIGCONT);
 
             // printf("%d\n",strcmp(buffer, "exit\n"));
